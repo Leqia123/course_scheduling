@@ -25,7 +25,7 @@ CREATE TABLE courses (
     name VARCHAR(255) NOT NULL,
     total_sessions INT NOT NULL CHECK (total_sessions >= 0),
     course_type VARCHAR(50) DEFAULT '理论课'
-);#这个要更新
+);
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
@@ -76,7 +76,7 @@ CREATE TABLE course_assignments (
     expected_students INT DEFAULT 0 CHECK (expected_students >= 0)
     -- Optional: UNIQUE constraint if a specific combo shouldn't be duplicated
     -- UNIQUE (major_id, course_id, teacher_id, semester_id)
-);#这个要更新
+);
 
 -- Table to store the final schedule results (optional, if you want to save results to DB)
 CREATE TABLE timetable_entries (
@@ -118,9 +118,7 @@ create TABLE teacher_scheduling_preferences
 INSERT INTO semesters (id, name, start_date, end_date) VALUES
 (1, '2023-2024学年秋季', '2023-09-04', '2024-01-19');
 
--- Insert Students
-INSERT INTO students (id,user_id,major_id,student_id_number) VALUES
-(1,1009,1,S20230001);
+
 
 -- Insert Majors
 INSERT INTO majors (id, name) VALUES
@@ -176,6 +174,10 @@ INSERT INTO users (id, username, password, role) VALUES
 (1008, '吴老师', '123', 'Teacher'),
 (1009, 'leqijia', '123', 'Student'),
 (1010, 'admin', '123', 'Admin');
+
+-- Insert Students
+INSERT INTO students (id,user_id,major_id,student_id_number) VALUES
+(1,1009,1,'S20230001');
 
 -- Insert Teachers (linking to users)
 INSERT INTO teachers (id, user_id) VALUES
