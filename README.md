@@ -53,3 +53,9 @@ pip install -r requirements.txt
 * 运行创建数据库.py以插入数据库表格信息
 * 运行app.py
 * 切换至course目录，运行npm run dev
+* 在网页打开，初始登录界面可以选择用户进行登录:
+<br>username:leqijia   password:123   role:student
+<br>username:王老师   password:123   role:teacher
+<br>username:李老师   password:123   role:teacher
+<br>username:admin   password:123   role:admin
+这里只罗列了一部分，具体用户信息可以去数据库中的users表中查看，也可以在数据库中增删修改用户信息
