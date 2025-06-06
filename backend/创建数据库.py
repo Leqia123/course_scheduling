@@ -164,16 +164,16 @@ INSERT INTO courses (id, name, total_sessions, course_type) VALUES
 
 -- Insert Users
 INSERT INTO users (id, username, password, role) VALUES
-(1001, '李老师', '123', 'Teacher'), -- INSECURE! HASH PASSWORDS!
-(1002, '王老师', '123', 'Teacher'),
-(1003, '张老师', '123', 'Teacher'),
-(1004, '赵老师', '123', 'Teacher'),
-(1005, '钱老师', '123', 'Teacher'),
-(1006, '孙老师', '123', 'Teacher'),
-(1007, '周老师', '123', 'Teacher'),
-(1008, '吴老师', '123', 'Teacher'),
-(1009, 'leqijia', '123', 'Student'),
-(1010, 'admin', '123', 'Admin');
+(1001, '李老师', '123', 'teacher'), -- INSECURE! HASH PASSWORDS!
+(1002, '王老师', '123', 'teacher'),
+(1003, '张老师', '123', 'teacher'),
+(1004, '赵老师', '123', 'teacher'),
+(1005, '钱老师', '123', 'teacher'),
+(1006, '孙老师', '123', 'teacher'),
+(1007, '周老师', '123', 'teacher'),
+(1008, '吴老师', '123', 'teacher'),
+(1009, 'leqijia', '123', 'student'),
+(1010, 'admin', '123', 'admin');
 
 -- Insert Students
 INSERT INTO students (id,user_id,major_id,student_id_number) VALUES
