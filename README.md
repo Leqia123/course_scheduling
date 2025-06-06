@@ -7,7 +7,7 @@
 * backend目录下app.py是后端总代码，scheduler_module.py是排课算法，创建数据库.py是用于创建数据库中的表格并且插入相关信息（相关的表格信息已经处于代码中，将数据库名称密码替换为本地的之后直接运行代码即可创建表并且插入数据）。
 * course/src/views目录下是前端各界面代码，包括Login.vue（登录界面）、StudentDashboard.vue（学生登录后界面）、TeacherDashboard.vue（教师登录后界面）、AdminDashboard.vue（管理员登录后界面）、TimetableGridDisplay(studentdashboard用).vue用于显示课表。
 * course/src/components目录下是各组件，其中有管理员界面的四个组件AdminImportCoursePlan.vue，AdminStudentTimetable.vue，AdminTeacherTimetable.vue，AdminManualScheduling.vue，分别代表课程计划管理界面、查询学生课表界面、查询教员课表界面、手动调整课表界面。还有教师界面的两个组件TeacherSchedulingRequest.vue、TeacherTimetable.vue，分别代表提出排课要求界面、查询教师课表界面。
-* 
+
 ## 技术栈
 ### 后端 (backend)
 - Python 3.9+
@@ -58,4 +58,4 @@ pip install -r requirements.txt
 <br>username:王老师   password:123   role:teacher
 <br>username:李老师   password:123   role:teacher
 <br>username:admin   password:123   role:admin
-这里只罗列了一部分，具体用户信息可以去数据库中的users表中查看，也可以在数据库中增删修改用户信息
+<br>这里只罗列了一部分，具体用户信息可以去数据库中的users表中查看，也可以在数据库中增删修改用户信息
