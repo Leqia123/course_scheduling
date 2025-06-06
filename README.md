@@ -46,6 +46,7 @@
 ```bash
 cd backend
 pip install -r requirements.txt
+```
 
 ## 运行步骤
 * 安装相关依赖
