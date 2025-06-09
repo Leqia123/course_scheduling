@@ -24,7 +24,7 @@
 - Vue Router
 
 ### 数据库 (Database)
--PostgreSQL
+- PostgreSQL
 
 ## 功能模块
 ### 教师端
